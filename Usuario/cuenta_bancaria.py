@@ -16,7 +16,7 @@ class CuentaBancaria:
         print("Balance: $",self.balance)
         return self
     def generar_interes(self):
-        self.balance=self.balance*self.tasa_int
+        self.balance=self.balance+self.balance*self.tasa_int
         return self
     @classmethod
     def imprimir_todas_cuentas(cls):
